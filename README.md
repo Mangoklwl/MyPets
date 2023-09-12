@@ -1,2 +1,4 @@
 # MyPets
-Aplicación hecha durante el curso para aprender Kotlin
+Trabajo de fin de ciclo.
+
+
