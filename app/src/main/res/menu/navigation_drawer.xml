@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item11"
+            android:checked="false"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="@string/txtMenu" />
+    </group>
+
+    <group
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/subgroupFiltros"
+            android:title="@string/txtSubgrupo1">
+            <menu>
+                <group
+                    android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/item21"
+                        android:checked="false"
+                        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+                        android:title="@string/txtMenu11"/>
+
+                    <item
+                        android:id="@+id/item22"
+                        android:checked="false"
+                        android:icon="@android:drawable/ic_menu_sort_by_size"
+                        android:title="@string/txtMenu12"/>
+                    <item
+                        android:id="@+id/item23"
+                        android:checked="false"
+                        android:icon="@android:drawable/star_on"
+                        android:title="@string/txtMenu13"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/subgroup"
+            android:title="@string/txtSubgrupo2">
+            <menu>
+                <group
+                    android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/item31"
+                        android:checked="false"
+                        android:icon="@android:drawable/ic_menu_mapmode"
+                        android:title="@string/txtMenu21" />
+                    <item
+                        android:id="@+id/item32"
+                        android:checked="false"
+                        android:icon="@android:drawable/ic_menu_info_details"
+                        android:title="@string/txtMenu22" />
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>

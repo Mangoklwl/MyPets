@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_fragment_item"
+    tools:context=".ui.fragments.ItemMascotaFragment">
+
+    <TextView
+        android:id="@+id/txtintro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="120dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Información mascota"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="332dp"
+        android:textColor="@android:color/black"
+        android:text="Nombre:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtintro" />
+
+    <TextView
+        android:id="@+id/lblombrecientifico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="31dp"
+        android:text="Nombre cientifico:"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblnombre" />
+
+    <TextView
+        android:id="@+id/lbltipopelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Tipo de pelo:"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblombrecientifico" />
+
+    <TextView
+        android:id="@+id/lblclase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="38dp"
+        android:text="Clase:"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbltipopelo" />
+
+    <TextView
+        android:id="@+id/lblamorsidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="54dp"
+        android:text="Amorosidad"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblclase" />
+
+
+
+    <Button
+        android:id="@+id/btnsalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="162dp"
+        android:text="salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/foto" />
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="140dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="192dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnsalir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbltipopelo"
+        app:layout_constraintTop_toBottomOf="@+id/txtintro"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:enabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="@android:color/black"
+        android:background="@null"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/lblombrecientifico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblnombre"
+        app:layout_constraintTop_toBottomOf="@+id/txtintro" />
+
+    <EditText
+        android:id="@+id/nomCient"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="202dp"
+        android:layout_marginBottom="31dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tipoPelo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblombrecientifico"
+        app:layout_constraintTop_toBottomOf="@+id/txtintro" />
+
+    <EditText
+        android:id="@+id/tipoPelo"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/lbltipopelo"
+        app:layout_constraintTop_toBottomOf="@+id/lblombrecientifico" />
+
+    <EditText
+        android:id="@+id/clase"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="56dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/lblamorsidad"
+        app:layout_constraintEnd_toStartOf="@+id/foto"
+        app:layout_constraintStart_toEndOf="@+id/lblclase"
+        app:layout_constraintTop_toBottomOf="@+id/tipoPelo" />
+
+    <EditText
+        android:background="@null"
+        android:id="@+id/amorosidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="175dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnsalir"
+        app:layout_constraintEnd_toStartOf="@+id/foto"
+        app:layout_constraintStart_toEndOf="@+id/lblamorsidad"
+        app:layout_constraintTop_toBottomOf="@+id/clase" />
+
+    <ImageButton
+        android:id="@+id/favorito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="310dp"
+        android:layout_marginBottom="122dp"
+        android:background="#00FFFFFF"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblamorsidad"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+
+    <EditText
+        android:background="@null"
+        android:id="@+id/lblenlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="28dp"
+        android:text="Enlace"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblamorsidad" />
+
+    <EditText
+        android:background="@null"
+        android:id="@+id/enlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="253dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:linksClickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblenlace"
+        app:layout_constraintTop_toBottomOf="@+id/amorosidad" />
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="24dp"
+        android:text="Borrar"
+        app:layout_constraintEnd_toStartOf="@+id/btnsalir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favorito" />
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="56dp"
+        android:text="Editar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnsalir"
+        app:layout_constraintTop_toBottomOf="@+id/foto" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="7dp"
+        android:text="Guardar"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnsalir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

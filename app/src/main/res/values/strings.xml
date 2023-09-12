@@ -1,0 +1,32 @@
+<resources>
+    <string-array name="amorosidad_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="app_name">Shared</string>
+    <string name="pref_name">pref_name</string>
+    <string name="txt_btn_deletePrefs">txt_btn_deletePrefs</string>
+
+    <!--HEADERS -->
+    <string name="txtHeader1">Mascotas</string>
+    <string name="txtHeader2">opciones</string>
+    <string name="txtHeader3">txtHeader3</string>
+    <string name="txtHeader4"></string>
+    <!-- ITEMS MENU -->
+    <string name="txtMenu">Añadir mascota</string>
+
+    <string name="txtSubgrupo1">Filtros</string>
+        <string name="txtMenu11">Alfabeticamente</string>
+        <string name="txtMenu12">Amorosidad</string>
+        <string name="txtMenu13">Favoritas</string>
+    <string name="txtSubgrupo2">Otras opciones</string>
+        <string name="txtMenu21">Politica de privacidad</string>
+        <string name="txtMenu22">Acerca de</string>
+    <string name="txt_open">txt_open</string>
+    <string name="txt_close">txt_close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
